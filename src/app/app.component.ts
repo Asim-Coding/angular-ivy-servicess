@@ -1,11 +1,12 @@
 import { Component, VERSION } from '@angular/core';
 import { MessageService } from './message.service';
+import { NumlistService } from './numlist.service';
 import { OthermessageService } from './othermessage.service';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ],
-  providers:[MessageService,OthermessageService]
+  providers:[MessageService,OthermessageService,NumlistService]
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
